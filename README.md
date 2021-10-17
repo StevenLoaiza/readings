@@ -3,9 +3,9 @@
 INTRO
 
 ## Boomerang by Michael Lewis
-### The investigation of bubbles beyound the United States
+*The investigation of bubbles beyond the United States*
 
-~[](./images/Boomerang.jpeg)
+<img src="./images/Boomerang.jpeg" width="500" height="690">
 
 Michael Lewis writes mundane topics in an interesting light. I have read The Premonition, The Undoing Project, Flash Boys, Liar’s Poker and saw films based on his writing, namely The Blind Side and The Big Short. Each of these is about economics or finance (not the most exciting topics). But somehow Michael Lewis adds a spark to the topic and brings it to life. I am now working my way back to some of his earlier work, starting with Boomerang.
 
