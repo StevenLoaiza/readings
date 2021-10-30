@@ -5,7 +5,7 @@ INTRO
 ## Boomerang by Michael Lewis
 *The investigation of bubbles beyond the United States*
 
-<img src="./images/Boomerang.jpeg" width="500" height="690">
+<img src="./images/Boomerang.jpeg" width="300" height="300">
 
 Michael Lewis writes mundane topics in an interesting light. I have read The Premonition, The Undoing Project, Flash Boys, Liar’s Poker and saw films based on his writing, namely The Blind Side and The Big Short. Each of these is about economics or finance (not the most exciting topics). But somehow Michael Lewis adds a spark to the topic and brings it to life. I am now working my way back to some of his earlier work, starting with Boomerang.
 
@@ -21,21 +21,34 @@ Apart from the dense metrics above, we also get some funny stories in the readin
 
 Everyone kept partying even though the music stopped, the lights went out, and the building was on fire. Consumers had a delusional optimism that the “good times” were perpetual and that there was no limit. After the money is spent, the creditor comes knocking for their repayment. The governments are unable to pay their debts because the public is evading taxes by misrepresenting their income (pg. 51) and why bother realizing the losses when the government will rescue you (pg 105, 113). The problem runs deeper than this, and the chapters have a way of telling a story that is both informative and interesting.
 
-## CODE by Charles Petzold
-*A better appreciation for computers by building one from scratch*
+## Understanding how computers work
+*Code by Charles Petzold gives us a better appreciation for computers by building one from scratch.*
 
-As a Data Scientist, I hear many of the buzzwords such as Big Data, Machine Learning, and AI. Along with discussions about faster processing, for the vast amounts of data that we collect. The data must be stored, retrieved, and consumed. But with all this complexity and forward-thinking I never stopped to think about the foundation of computing and how it actually works?
+<img src="./images/Code.jpg" width="300" height="300">
 
-	*We stand on the shoulders of those who came before us* — Simon Donovan
+Back in June, I was developing a scoring pipeline for a machine learning model that would be placed into production. As with many real-time modeling applications, there is a client that is expecting a response and thus there are latency requirements. This meant that the pipeline would have an upper limit of 750ms, yes milliseconds. I needed to speed up the computations and minimize memory usage. After spending weeks on the task, we clocked the run below 300ms.
 
-And this is true when it comes to technology.
+This task made me appreciate the engineering, usage of native python data structure, and memory. Memory played a big role in reducing the computation speed of the script. With all this complexity I began to wonder about the foundation of computing and how it all actually works?
 
-If you are interested in how a computer works you should read CODE: The hidden language of computer hardware and software by Charles Petzold. This is not the most interesting topic, and most users of computers knowing more won't help them in their everyday lives. But for those of us that are inquisitive in knowing more read on. I must warn you it took me three weeks to finish and at times I felt like giving up but as Petzold states, “*With sophistication comes complexity, so some of this might be rough going. No one will blame you if you skim over the excruciating details*” [pg. 206].
+Although it took 16 chapters to reach memory Charles Petzold’s Code, takes the reader through a well-organized journey. I will say this is not the most interesting topic, and knowing more won't help in your everyday use of computers. It took me three weeks to finish and at times I felt like giving up (especially with Hexa-decimals and following Logic Gates) but as Petzold states, “With sophistication comes complexity, so some of this might be rough going. No one will blame you if you skim over the excruciating details” [pg. 206].
 
-<img src="./images/Code.jpg" width="500" height="690">
+After reading you will come away with a much better understanding and respect for a computer.
+Much of the first few chapters are dedicated to simple machines and communication systems. I use the term “simple” loosely because these concepts and inventions were ahead of their time during their development.
 
-After reading you will come away with a much better understanding and respect for a computer. And be thankful that it is able to perform mundane tasks such as adding (+), subtracting (-), and storing useful information (that our memory always tends to forget like someone's birthday).
+The book starts off with an interesting story of two best friends that want to communicate, without the use of cellphones, the internet, or other devices. As many would guess, the best friends use a tool to communicate, the flashlight. Through this tale, we learn about morse code, braille, binary code( the very essence of a computer), and how to build a flashlight. The story deepens when one of the friends moves away. This leads to, conceptually, building a Bidirectional telegraph system with the use of a few items (batteries, wires, and lightbulb).
 
-The book starts off with an interesting story of two best friends that want to communicate, without the use of cellphones, the internet, or social media. As many would guess, the best friends use a tool to communicate, the flashlight. The story of the best friends takes us through the early journey of morse code, braille, binary code( the very essence of a computer), and how to build a flashlight. The story deepens when one of the friends moves away. Enter telegraphs and relays. 
+The concept is straightforward. The system must convert light patterns to written language much like Morse code. Let's discuss the flow of our telegraph system.
+For any of the bulbs to light up the circuit must be closed via the switch. This serves as the input of the communication system. Leaving the switch closed for half a second can signal a dot while 3 seconds is a dash. And a pre-defined set of dots and dashes equates to a letter. And you see the pattern, a tedious and often time-consuming task creates a communication system between two parties.
 
-The story eventually diverges from the two best friends, but the journey helps to solidify the concept. It has the added bonus of making it exciting to read.
+<img src="./images/bidir-telegraph.PNG">
+
+This machine only has two positions, on/off. Communication, and in general computing, requires more complicated logic. Charles does a great job explaining the use of logic gates and visually demonstrating how it can create complicated logic. Logic gates are an important takeaway from the concepts of computing.
+
+After the logic for I/O is complete, it must be stored. Think about the task of adding three numbers together. The first two numbers are added, the intermediate value is stored, then the third number is added to get the final result. Random Access Memory allows the computer to store the intermediate value for later use. RAM allocates space to hold data that can be retrieved by knowing its storage location address and it is processed quickly compared to reading from the hard drive.
+
+<img src="./images/ram.PNG">
+
+I won't go into detail on the mechanics of how a circuit holds data, Charles has done a wonderful job of explaining the concept. Although chapter 16 is dedicated to RAM, it is chapter 14 Feedback and Flip-Flops where he explains how a circuit remembers.
+
+The book starts off strong and grabs the reader's attention, although it may falter when it comes to hexadecimal and logic gates. I encourage you to skim through the chapters requiring too much focus and instead grasp the general concepts. Once you are done and would like to dig into the details you can review them again.
+
